@@ -1,7 +1,7 @@
-// TODO: Include packages needed for this application
+// Included packages required for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// TODO: Create an array of questions for user input
+// Created an array of questions for the user's input
 const questions = [
   {
     type: 'input',
@@ -18,8 +18,8 @@ const questions = [
   {
     type: 'input',
     name: 'TableContents',
-    message: 'Will you be needing a table of contents for this README?',
-    default: '1. Placeholder\n2. Placeholder\n3. Placeholder'
+    message: 'Please create a Table of Contents, if necessary for this file. If no Table of Contents is required, please type: N/A',
+    default: '1. Placeholder 2. Placeholder 3. Placeholder'
   },
   {
     type: 'input',
@@ -64,8 +64,7 @@ const questions = [
     default: 'email@example.com'
   },
 ];
-// TODO: Create a function to write README file
-// TODO: Create a function to initialize app
+// Created a function to initialize the application and write a README file
 function init() {
   inquirer.prompt(questions)
     .then((answers) => {
@@ -86,5 +85,5 @@ function writeToFile(fileName, data) {
     }
   });
 }
-// Function call to initialize app
+// Function call to initialize the application
 init();
