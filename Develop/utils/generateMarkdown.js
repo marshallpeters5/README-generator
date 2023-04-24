@@ -91,15 +91,18 @@ function renderTableOfContents(data) {
 
   sections.forEach((section) => {
     if (data[section.toLowerCase()]) {
-      tableOfContents += `- [${section}](#${section.toLowerCase()})\n`;
+      const anchorId = section.toLowerCase().replace(/\s+/g, '-');
+      tableOfContents += `- [${section}](#${anchorId})\n`;
     }
   });
+
   if (tableOfContents) {
-    tableOfContents = `## Table of Contents\n\n${tableOfContents}`;
+    tableOfContents = `## Table of Contents\n\n${tableOfContents}\n`;
   }
 
   return tableOfContents;
 }
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
