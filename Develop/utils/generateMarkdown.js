@@ -92,7 +92,7 @@ function renderTableOfContents(data) {
 
   sections.forEach((section) => {
     if (data[section.toLowerCase()]) {
-      tableOfContents += `- [${section}](##${section.toLowerCase().replace(/ /g, '-')})\n`;
+      tableOfContents += `- [${section}](#${section.toLowerCase().replace(/ /g, '-')})\n`;
     }
   });
 
