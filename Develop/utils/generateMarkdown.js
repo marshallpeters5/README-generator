@@ -1,5 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+const marked = require('marked');
+
 function renderLicenseBadge(license) {
   if (!license) {
     return '';
@@ -105,35 +107,37 @@ function renderTableOfContents(data) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  const licenseSection = renderLicenseSection(data.license);
+  const tableOfContents = renderTableOfContents(data);
+  
+  const markdown = 
+  `# ${data.title}
 
-## Description
+    ${licenseBadge}
+    
+    ## Description
+    ${data.description}
+    
+    ${tableOfContents}
 
-${data.description}
-
-${renderTableOfContents(data)}
-
-## Installation
-
-${data.installation}
-
-## Usage
-
-${data.usage}
-
-${renderLicenseSection(data.license)}
-
-## Contributing
-
-${data.contributing}
-
-## Tests
-
-${data.tests}
-
-## Questions
-
-If you have any questions, please contact me at ${data.email}. You can also find more of my work at [${data.github}](https://github.com/${data.github}/).`;
+    ## Installation
+    ${data.installation}
+    
+    ## Usage
+    ${data.usage}
+    
+    ${licenseSection}
+    
+    ## Contributing
+    ${data.contributing}
+    
+    ## Tests
+    ${data.tests}
+    
+    ## Questions
+    ${data.questions}`;
+  
+  return marked(markdown);
 }
 
 module.exports = generateMarkdown;
