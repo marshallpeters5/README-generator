@@ -112,8 +112,6 @@ function generateMarkdown(data) {
   
   const markdown = 
   `# ${data.title}
-
-    ${licenseBadge}
     
     ## Description
     ${data.description}
