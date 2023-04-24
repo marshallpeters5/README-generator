@@ -23,7 +23,7 @@ Use node index in the integrated terminal to run the program locally. After you 
 
 ![image](https://user-images.githubusercontent.com/89714815/233980777-07315be6-b458-4c72-b4f2-184a4505218f.png)
 
-![Click to see a demo](https://user-images.githubusercontent.com/89714815/233982643-e135a67b-0922-4af1-9631-e3f661e7131e.mp4)
+![ Click to see a demo](https://user-images.githubusercontent.com/89714815/233982643-e135a67b-0922-4af1-9631-e3f661e7131e.mp4)
 
 ## License
 
