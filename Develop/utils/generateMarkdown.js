@@ -92,7 +92,7 @@ function renderTableOfContents(data) {
 
   sections.forEach((section) => {
     if (data[section.toLowerCase()]) {
-      tableOfContents += `- [${section}](#${section.toLowerCase().replace(/ /g, '-')})\n`;
+      tableOfContents += `- [${section}](#${section.toLowerCase().replace(/ /g, '-')}-)\n`;
     }
   });
 
@@ -102,8 +102,6 @@ function renderTableOfContents(data) {
 
   return tableOfContents;
 }
-
-
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
