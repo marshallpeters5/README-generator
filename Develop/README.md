@@ -1,8 +1,8 @@
-# My Project Title
+# README Generator
 
 ## Description
 
-This is a placeholder description.
+This application allows the user to dynamically create a high quality README.md file for their work ny using the command terminal.
 
 ## Table of Contents
 
@@ -39,4 +39,4 @@ Testing is not yet set up for this application.
 
 ## Questions
 
-If you have any questions, please contact me at email@example.com. You can also find more of my work at [username](https://github.com/username/).
+If you have any questions, please contact me at marshall.peters01@gmail.com. You can also find more of my work at [marshallpeters5](https://github.com/marshallpeters5/).

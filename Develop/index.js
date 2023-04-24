@@ -2,7 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-// Created an array of questions for the user's input
+
+// Created an array of questions for the user's input.
 const questions = [
   {
     type: 'input',
@@ -65,6 +66,7 @@ const questions = [
     default: 'email@example.com'
   },
 ];
+
 // Created a function to initialize the application and write a README file
 function init() {
   inquirer.prompt(questions)
@@ -86,5 +88,6 @@ function writeToFile(fileName, data) {
     }
   });
 }
+
 // Function call to initialize the application
 init();
