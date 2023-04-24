@@ -21,9 +21,13 @@ Use npm init -y and npm i inquirer in the integrated terminal.
 
 Use node index in the integrated terminal to run the program locally. After you have done this, follow the prompts provided to you in your terminal and you will have a high quality README in just moments.
 
+Terminal:
 ![image](https://user-images.githubusercontent.com/89714815/233980777-07315be6-b458-4c72-b4f2-184a4505218f.png)
 
-![ Click to see a demo](https://user-images.githubusercontent.com/89714815/233982643-e135a67b-0922-4af1-9631-e3f661e7131e.mp4)
+Markdown file:
+![image](https://user-images.githubusercontent.com/89714815/233985051-41af4753-baab-482b-9bbe-b4db9e956cd6.png)
+
+Demo video: https://user-images.githubusercontent.com/89714815/233982643-e135a67b-0922-4af1-9631-e3f661e7131e.mp4
 
 ## License
 
