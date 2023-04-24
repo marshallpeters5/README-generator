@@ -85,14 +85,14 @@ ${licenseBadge}
 This project is licensed under the ${license} License. See the [${license}](${licenseLink}) file for details.`;
 }
 
+// Desperately trying to get this to take me to the desired location on the README using HTML anchor tags.
 function renderTableOfContents(data) {
   const sections = ['Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions'];
   let tableOfContents = '';
 
   sections.forEach((section) => {
     if (data[section.toLowerCase()]) {
-      const anchorId = section.toLowerCase().replace(/\s+/g, '-');
-      tableOfContents += `- [${section}](#${anchorId})\n`;
+      tableOfContents += `- [${section}](##${section.toLowerCase().replace(/ /g, '-')})\n`;
     }
   });
 
@@ -102,6 +102,7 @@ function renderTableOfContents(data) {
 
   return tableOfContents;
 }
+
 
 
 // TODO: Create a function to generate markdown for README
